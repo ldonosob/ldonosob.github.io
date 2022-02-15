@@ -42,6 +42,8 @@ const isInStandaloneMode = () => (window.matchMedia('(display-mode: standalone)'
 const isFullScreen = () => (window.matchMedia('(display-mode: fullscreen)').matches);
 
 
+alert( "Es IOS:" +isIos());
+
 //Está Instalado
 if (isInStandaloneMode() == true && ( isIos() == true || instaladoAndroid == true )) {
     
