@@ -1,0 +1,117 @@
+﻿@import '_general.css';
+
+hr
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.contenido-certificado-antiguedad {
+    background: linear-gradient(#CEC7B7, #FFFFFF);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+}
+
+    .contenido-certificado-antiguedad .contenedor-certificado {
+        background-color: #FFFFFF;
+        margin: 20px 10% 20px 10%;
+        box-shadow: 0px 0px 3px 2px rgb(0 0 0 / 20%);
+        border-radius: 2px;
+        padding: 20px;
+        font-size: .9em;
+        display: flex;
+        flex-direction: column;
+    }     
+
+
+        .contenido-certificado-antiguedad .contenedor-certificado .contenedor-logo{
+
+            width:100%;
+            text-align:center;
+        }
+
+            .contenido-certificado-antiguedad .contenedor-certificado .contenedor-logo .imagen-certificado {
+                height: 100%;
+                object-position: center;
+                width: 250px;
+            }
+
+        .contenido-certificado-antiguedad .contenedor-certificado .contenedor-titulo {
+            width: 100%;
+            text-align: center;
+            font-family: "Roboto Condensed Regular";
+        }
+
+        .contenido-certificado-antiguedad .contenedor-certificado .contenedor-firma{
+            width: 100%;
+            text-align:center;
+        }
+
+            .contenido-certificado-antiguedad .contenedor-certificado .contenedor-texto {
+                width: 100%;
+            }
+
+                .contenido-certificado-antiguedad .contenedor-certificado .contenedor-texto h4 {
+                    font-family: "Roboto Condensed Regular";
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 1.3;
+                    text-align: justify;
+                }
+
+
+.contenido-certificado-antiguedad .contenedor-certificado .contenedor-firma .imagen-logo {
+    object-position: center;
+    display: block;
+    width: 214px;
+    margin: 0 auto;
+    opacity: 0.37;
+}
+
+            .contenido-certificado-antiguedad .contenedor-certificado .contenedor-firma .imagen-firma {
+                padding-top: 10px;
+                object-position: center;
+                display: block;
+                width: 214px;
+                margin: 0 auto 35px;
+            }
+
+        .contenido-certificado-antiguedad .contenedor-certificado .contenedor-firmante {
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            font-family: 'Roboto Condensed Regular';
+        }
+
+        .contenido-certificado-antiguedad .contenedor-certificado .contenedor-fecha-actual {
+            width: 100%;
+            text-align: left;
+            font-size: 14px;
+            font-family: 'Roboto Condensed Regular';
+        }
+
+            .contenido-certificado-antiguedad .contenedor-certificado .contenedor-fecha-actual h4 {
+                font-weight: normal;
+                font-family: 'Roboto Condensed Regular';
+                margin-block-start: 0px;
+                margin-block-end: 0px;
+            }
+
+        .contenido-certificado-antiguedad .contenedor-certificado .contenedor-disclaimer {
+            width: 100%;
+            text-align: justify;
+        }
+            .contenido-certificado-antiguedad .contenedor-certificado .contenedor-disclaimer .disclaimer {
+                font-family: 'Roboto Condensed Regular';
+                font-weight: normal;
+                line-height: 1.1;
+                color: #777;
+                font-size: 12px;
+            }        
+
+
+    

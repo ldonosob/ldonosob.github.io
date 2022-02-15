@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="manifest" href="../../manifest.json" />
+    <title>SantaRita-APP | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="../Content/images/favicon.ico" />
+
+    <!-- Opensoft -->
+    <script src="../../_librerias/MomentJS/moment-with-locales.min.js"></script>
+    <script src="../../appConfig.js"></script>
+    <script src="../../_librerias/OpenNet/_general.js"></script>
+
+    <!-- Propios -->
+    <link rel="stylesheet" href="../Content/css/saldo_vacaciones.css" />
+    <script src="../Content/js/saldo_vacaciones.js"></script>
+</head>
+<body>
+    <div class="menu-superior">
+        <div class="menu-hamburguesa-superior">
+            <button class="btn-hamburguesa" onclick="Opensoft.ClickMenuIzquierdo(this)">
+                <i class="fa fa-list-ul"></i>
+            </button>
+        </div>
+        <div class="contenedor-imagen-menu-superior">
+            <a href="/App/Layout/home.html">
+                <img src="../Content/images/logo-top-SRE.png" class="imagen-menu-superior" />
+            </a>
+        </div>
+        <div class="menu-usuario-superior">
+            <button class="btn-usuario" onclick="Opensoft.ClickMenuUsuario(this)">
+                <img src="../Content/images/icons/logo512.png" class="foto-usuario visible" />
+                <i class="fa fa-times cerrar-menu-usuario"></i>
+            </button>
+        </div>
+        <div class="menu-izquierdo">
+            <div class="contenedor-menu-izquierdo">
+                <ul class="listado-menu-izquierdo"></ul>
+                <a href="/App/Layout/home.html">
+                    <img src="../Content/images/logo-top2.png" class="logo-menu-izquierdo" />
+                </a>
+            </div>
+        </div>
+        <div class="menu-usuario">
+            <div class="contenedor-menu-usuario">
+                <div class="contenedor-imagen">
+                    <img src="../Content/images/icons/logo512.png" class="icono-menu-usuario" />
+                </div>
+
+                <label class="bienvenida-menu-usuaio">Bienvenido</label>
+                <label class="nombre-menu-usuaio"></label>
+                <ul class="listado-menu-usuario"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="contenido-saldo-vacaciones" style="background: linear-gradient(#CEC7B7, #FFFFFF);height: 100%;">
+        <div class="formulario-vacaciones">
+            <div>
+                <label>Para buscar coloque el rut correspondiente a su ficha de usuario sin puntos ni guión</label>
+            </div>
+            <input type="text" class="rut-usuario" placeholder="Ingrese su RUT" onkeyup="Opensoft.OnEnter(event, Vacaciones.BuscarSaldoVacaciones)" />
+            <button class="buscar-saldo" onclick="Vacaciones.BuscarSaldoVacaciones()">Buscar</button>
+        </div>
+        <div class="saldo-vacaciones">
+            <div class="contenedor-nombre-usuario">
+                <label class="estimado">Estimado(a) </label><label class="nombre-usuario">Usuario</label>
+            </div>
+            <div class="contenedor-actualizado">
+                <label class="actualizado">Tiene actualizado al <b>30 de abril de 2018</b> la cantidad de</label>
+            </div>
+            <div class="contenedor-dias-disponibles">
+                <label class="dias-disponibles">42,50 Días</label>
+            </div>
+            <div class="contenedor-habiles">
+                <label class="habiles">Hábiles disponibles</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

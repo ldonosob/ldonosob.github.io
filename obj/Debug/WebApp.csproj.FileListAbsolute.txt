@@ -1,0 +1,7 @@
+E:\DiscoS\Fuentes\trunk\SantaRita\Aplicacion\website\WebApp\bin\WebApp.dll.config
+E:\DiscoS\Fuentes\trunk\SantaRita\Aplicacion\website\WebApp\bin\WebApp.dll
+E:\DiscoS\Fuentes\trunk\SantaRita\Aplicacion\website\WebApp\bin\WebApp.pdb
+E:\DiscoS\Fuentes\trunk\SantaRita\Aplicacion\website\WebApp\obj\Debug\WebApp.csprojAssemblyReference.cache
+E:\DiscoS\Fuentes\trunk\SantaRita\Aplicacion\website\WebApp\obj\Debug\WebApp.csproj.CoreCompileInputs.cache
+E:\DiscoS\Fuentes\trunk\SantaRita\Aplicacion\website\WebApp\obj\Debug\WebApp.dll
+E:\DiscoS\Fuentes\trunk\SantaRita\Aplicacion\website\WebApp\obj\Debug\WebApp.pdb

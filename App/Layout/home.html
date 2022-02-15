@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="manifest" href="../../manifest.json" />
+    <title>SantaRita-APP | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="../Content/images/favicon.ico" />
+
+    <!-- Opensoft -->
+    <script src="../../_librerias/MomentJS/moment-with-locales.min.js"></script>
+    <script src="../../appConfig.js"></script>
+    <script src="../../_librerias/OpenNet/_general.js"></script>
+    <script src="../../_librerias/TinySlider/tiny-slider.js"></script>
+
+    <!-- Propios -->
+    <link rel="stylesheet" href="../Content/css/home.css" />
+    <link rel="stylesheet" href="../../_librerias/TinySlider/tiny-slider.css">
+
+    <script src="../Content/js/home.js"></script>
+    <script src="../../_librerias/Zoom/zoom.js"></script>
+</head>
+<body>
+    <div class="menu-superior">
+        <div class="menu-hamburguesa-superior">
+            <button class="btn-hamburguesa" onclick="Opensoft.ClickMenuIzquierdo(this)">
+                <i class="fa fa-list-ul"></i>
+            </button>
+        </div>
+        <div class="contenedor-imagen-menu-superior">
+            <a href="/App/Layout/home.html">
+                <img src="../Content/images/logo-top-SRE.png" class="imagen-menu-superior" />
+            </a>
+        </div>
+        <div class="menu-usuario-superior">
+            <button class="btn-usuario" onclick="Opensoft.ClickMenuUsuario(this)">
+                <img src="../Content/images/icons/logo512.png" class="foto-usuario visible" />
+                <i class="fa fa-times cerrar-menu-usuario"></i>
+            </button>
+        </div>
+        <div class="menu-izquierdo">
+            <div class="contenedor-menu-izquierdo">
+                <ul class="listado-menu-izquierdo"></ul>
+                <a href="/App/Layout/home.html">
+                    <img src="../Content/images/logo-top2.png" class="logo-menu-izquierdo" />
+                </a>
+            </div>
+        </div>
+        <div class="menu-usuario">
+            <div class="contenedor-menu-usuario">
+                <div class="contenedor-imagen">
+                    <img src="../Content/images/icons/logo512.png" class="icono-menu-usuario" />
+                </div>
+                <label class="bienvenida-menu-usuaio">Bienvenido</label>
+                <label class="nombre-menu-usuaio"></label>
+                <ul class="listado-menu-usuario"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="contenido-home">
+        <div class="seccion-home seccion-accesos-home">
+            <div class="contenedor-seccion-home"></div>
+        </div>
+        <div class="titulo-seccion-home siempre-conectados" onclick="Home.ToggleSeccionHomeDiv(this, '.seccion-siempre-conectados-home')">
+            <div class="texto-titulo-seccion-home"><label>Todos Siempre Conectados</label></div>
+            <div class="flecha-titulo-seccion-home"><i class="fa fa-chevron-down"></i></div>
+        </div>
+        <div class="seccion-home seccion-siempre-conectados-home">
+            <div class="contenedor-seccion-home">
+
+                <div class="otras-imagenes-siempre-conectados">
+                    <div class="contenedor-otras-imagenes">
+                        <div class="carousel-opensoft">
+                            <div id="sliderSiempreConectados" class="elementos-carousel otras-imagenes"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <img onclick="Opensoft.HacerZoomImagen(this, document.querySelector('.nota-imagen-principal').innerHTML);" class="imagen-principal-siempre-conectados" />
+                <div class="info-imagen-principal">
+                    <div class="contenedor-me-gusta-coment">
+                        <label class="me-gusta-imagen-principal"><i onclick="Home.ProcesarLike();" class="fa fa-heart"></i>&nbsp;<span>0</span></label>
+                        <label class="cant-comentarios-imagen-principal" onclick="Home.MostrarPopupComentario()"><i class="far fa-comment-alt"></i>&nbsp;<span>0</span></label>
+                    </div>
+                    <div class="contenedor-fecha-imagen-principal">
+                        <label class="fecha-imagen-principal"></label>
+                    </div>
+                </div>
+                <label class="nota-imagen-principal"></label>
+
+                <div class="comentarios-imagen-principal"></div>
+                <div class="ver-todos-coment-imagen-principal">
+                    <label onclick="Home.CargarTodosLosComentarios(this)"><label>Ver más comentarios</label> <i class="fa fa-chevron-down"></i></label>
+                </div>
+            </div>
+        </div>
+        <div class="titulo-seccion-home noticias-destacadas" onclick="Home.ToggleSeccionHomeDiv(this, '.contenedor-noticias')">
+            <div class="texto-titulo-seccion-home"><label>Noticias Destacadas</label></div>
+            <div class="flecha-titulo-seccion-home"><i class="fa fa-chevron-down"></i></div>
+        </div>
+        <div class="contenedor-noticias">
+            <div class="seccion-noticias-destacadas">
+                <div class="contenedor-slider">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="titulo-seccion-home entrevista-del-mes" onclick="Home.ToggleSeccionHomeDiv(this, '.seccion-entrevista-del-mes-home')">
+            <div class="texto-titulo-seccion-home"><label>Entrevista del mes</label></div>
+            <div class="flecha-titulo-seccion-home"><i class="fa fa-chevron-down"></i></div>
+        </div>
+
+        <div class="seccion-home seccion-entrevista-del-mes-home">
+            <div class="contenedor-seccion-home">
+                <div class="noticias-destacadas"></div>
+                <div class="ver-mas-noticias">
+                    <a href="noticia.html">Ver más noticias <i class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="titulo-seccion-home descorchado-mes" onclick="Home.ToggleSeccionHomeDiv(this, '.seccion-descorchado-mes-home')">
+            <div class="texto-titulo-seccion-home"><label>Descorchado del Mes</label></div>
+            <div class="flecha-titulo-seccion-home"><i class="fa fa-chevron-down"></i></div>
+        </div>
+        <div class="seccion-home seccion-descorchado-mes-home">
+            <div class="contenedor-seccion-home">
+
+            </div>
+        </div>
+        <div class="titulo-seccion-home espacio-tedwine" onclick="Home.ToggleSeccionHomeDiv(this, '.seccion-espacio-tedwine-home')">
+            <div class="texto-titulo-seccion-home"><label>Mejora tus conocimientos</label></div>
+            <div class="flecha-titulo-seccion-home"><i class="fa fa-chevron-down"></i></div>
+        </div>
+        <div class="seccion-home seccion-espacio-tedwine-home">
+            <div class="contenedor-seccion-home">
+                <video class="video-tedwine" src="#" controls="" controlslist="nodownload" preload="none"></video>
+                <div class="ver-mas-tedwine">
+                    <a href="#">Ver todas las charlas <i class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div id="divModalImagen" class="modal">
+            <div class="zoom">
+                <img class="modal-content media" id="imgModal">
+            </div>
+            <div id="divDescripcionImagen"></div>
+        </div>
+
+        <div id="divModalComentario" class="modal-comentario">
+            <div class="modal-contenido-comentario" id="divContenidoComentario">
+                <div>
+                    <label>Agregar Comentario:</label>
+                </div>
+                <textarea type="text" class="input-comentario" maxlength="255" rows="4" placeholder="...Ingrese su comentario"> </textarea>
+                <div class="contenedor-botones">
+                    <button class="comentario-aceptar" onclick="Home.InsertarComentario();">Aceptar</button>
+                    <button class="comentario-cancelar" onclick="Home.OcultarPopUpComentario();">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

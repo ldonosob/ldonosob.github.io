@@ -1,0 +1,110 @@
+﻿@import '_general.css';
+
+body {
+    background-image: url('../images/fondo-login2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    margin-top: 20px;
+}
+
+    body .formulario-login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        body .formulario-login .logo-login {
+            margin-bottom: 50px;
+        }
+
+        body .formulario-login .titulo-login {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+            body .formulario-login .titulo-login .app {
+                color: yellow;
+                font-style: italic;
+                font-weight: bold
+            }
+
+        body .formulario-login .texto-login {
+            color: white;
+            font-size: 16px;
+        }
+
+        body .formulario-login .ingreso-login {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+
+            body .formulario-login .ingreso-login .input-login {
+                display: flex;
+                flex-direction: column;
+            }
+
+                body .formulario-login .ingreso-login .input-login .usuario-login {
+                    margin-bottom: 30px;
+                    background-color: rgba(255,255,255,.25);
+                    border-radius: 0;
+                    border-color: rgba(255,255,255,.25);
+                    color: rgba(255,255,255, 1);
+                    text-align: center;
+                    font-size: 16px;
+                    height: auto;
+                    padding: 10px;
+                    border: 1px solid transparent;
+                }
+
+                    body .formulario-login .ingreso-login .input-login .usuario-login::placeholder {
+                        color: rgba(255,255,255,.75);
+                    }
+
+                body .formulario-login .ingreso-login .input-login .clave-login {
+                    margin-bottom: 10px;
+                    background-color: rgba(255,255,255,.25);
+                    border-radius: 0;
+                    border-color: rgba(255,255,255,.25);
+                    color: rgba(255,255,255, 1);
+                    text-align: center;
+                    font-size: 16px;
+                    height: auto;
+                    padding: 10px;
+                    border: 1px solid transparent;
+                }
+
+                    body .formulario-login .ingreso-login .input-login .clave-login::placeholder {
+                        color: rgba(255,255,255,.75);
+                    }
+
+                body .formulario-login .ingreso-login .input-login .btn-ingresar-login {
+                    color: #000;
+                    background-color: rgba(255, 255, 255, 0.77);
+                    font-size: 15px;
+                    font-weight: normal;
+                    text-align: center;
+                    display: block;
+                    letter-spacing: 0.03em;
+                    text-decoration: underline;
+                    padding: 0.5em 0;
+                    width: 100%;
+                    margin: 5px auto;
+                    text-decoration: none;
+                    transition: all 0.2s ease-in 0s;
+                    text-transform: uppercase;
+                    border: 1px solid transparent;
+                    touch-action: manipulation;
+                    cursor: pointer;
+                }
+
+                    body .formulario-login .ingreso-login .input-login .btn-ingresar-login:hover {
+                        -webkit-box-shadow: -2px 2px 7px 0px rgb(0 0 0 / 80%);
+                        -moz-box-shadow: -2px 2px 7px 0px rgba(0,0,0,0.80);
+                        box-shadow: -2px 2px 7px 0px rgb(0 0 0 / 80%);
+                        background-color: rgba(197, 194, 58, 0.77);
+                    }

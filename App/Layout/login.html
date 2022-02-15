@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <link rel="manifest" href="../../manifest.json" />
+    <title>SantaRita-APP | Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="../Content/images/favicon.ico" />
+
+    <!-- Opensoft -->
+    <script src="../../_librerias/MomentJS/moment-with-locales.min.js"></script>
+    <script src="../../appConfig.js"></script>
+    <script src="../../_librerias/OpenNet/_general.js"></script>
+
+    <!-- Propios -->
+    <link rel="stylesheet" href="../Content/css/login.css" />
+    <script src="../Content/js/login.js"></script>
+</head>
+
+<body>
+    <div class="formulario-login">
+        <label class="titulo-login">Bienvenido a la <span class="app">App</span></label>
+        <img class="logo-login" src="../Content/images/logo-top2.png" />
+        <label class="texto-login">Por favor, ingrese sus credenciales</label>
+        <div class="ingreso-login">
+            <div class="input-login">
+                <input type="text" placeholder="Usuario" class="usuario-login" onkeyup="Opensoft.OnEnter(event, Login.Ingresar)" />
+                <input type="password" placeholder="Clave" class="clave-login" onkeyup="Opensoft.OnEnter(event, Login.Ingresar)" />
+                <br />
+                <button class="btn-ingresar-login" onclick="Login.Ingresar()">INGRESAR</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

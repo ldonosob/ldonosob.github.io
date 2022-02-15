@@ -1,0 +1,37 @@
+﻿@import '_general.css';
+
+body {
+    background-color: white;
+    overflow-x: hidden;
+}
+
+    /* SECCION ACCESOS HOME */
+
+    body .contenido-offline {
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+        height: calc(100% - 70px);
+        background-color: white;
+        padding: 0px 15px 0px 15px;
+        background: linear-gradient(#CEC7B7, #FFFFFF);
+    }
+
+        /* SECCION SIEMPRE CONECTADOS */
+        body .contenido-offline .contenedor-offline {
+            padding-top: 20px;
+            width:100%;
+            max-height: 150px;
+            text-align: center;
+        }
+
+            body .contenido-offline .contenedor-offline img {
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            body .contenido-offline .contenedor-offline h2 {
+                padding-top: 20px;
+                font-family: "Roboto Condensed Regular";
+            }

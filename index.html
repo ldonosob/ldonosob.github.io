@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <link rel="manifest" href="manifest.json" />
+    <title>SantaRita-APP | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="App/Content/images/favicon.ico" />
+
+    <!-- Propios -->
+    <link rel="stylesheet" href="App/Content/css/default.css" />
+</head>
+<body>
+    <div class="formulario">
+        <label class="titulo-instalacion">Bienvenido a la <span class="app">App</span></label>
+        <img class="logo-instalacion" src="App/Content/images/logo-top2.png" />
+        <label class="texto-login"></label>
+        <div id="divInstalacion"style="display:none;"  class="instalacion">
+            <div class="texto-instalacion">
+                <label class="texto-instalacion">Para poder utilizar la aplicación, debe tenerla instalada en su dispositivo.</label>
+            </div>
+            <div class="botones-instalacion">
+                <button class="btn-instalacion" onclick="invocarInstalacion();">Aceptar</button>
+            </div>
+        </div>
+        <div id="divMensajeEspera" style="display:none;"  class="instalacion">
+            <div class="texto-instalacion">
+                <label class="texto-instalacion">...Esperando instalación</label>
+            </div>
+        </div>
+        <div id="divYaInstalado" style="display:none;"  class="instalacion">
+            <div class="texto-instalacion">
+                <label class="texto-instalacion">Para ingresar, por favor, ejecute la aplicación instalada en su dispositivo</label>
+            </div>
+        </div>
+        <div id="divMensajeIphone" style="display:none;" class="instalacion">
+            <div class="texto-instalacion">
+                <label class="texto-instalacion">Para instalar la aplicación en Iphone, debe seleccionar la opción "compartir" y luego la opción "Agregar a Inicio". Si su aplicación ya está instalada, ejecutela desde desde el dispositivo.</label>
+            </div>
+        </div>
+    </div>
+
+    <script src="App/Content/js/default.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+﻿/* NUEVO */
+.carousel-opensoft {
+    width: 100%;
+    position: relative;
+}
+
+    .carousel-opensoft .contenedor-boton-carousel {
+        position: absolute;
+        font-size: 2.5em;
+        color: #B0B0B0;
+        top: calc(50% - 20px);
+        padding: 0px 10px 0px 10px;
+    }
+
+    .carousel-opensoft .contenedor-boton-carousel.contenedor-boton-carousel-noticia{
+        position: absolute;
+        font-size: 2.5em;
+        color: #B0B0B0;
+        top: 70px !important;
+        padding: 0px 10px 0px 10px;
+    }
+
+        .carousel-opensoft .contenedor-boton-carousel.boton-izquierdo-carousel {
+            left: 0;
+        }
+
+        .carousel-opensoft .contenedor-boton-carousel.boton-derecho-carousel {
+            right: 0;
+        }
+
+        .carousel-opensoft .contenedor-boton-carousel .boton-carousel {
+            width: 100%;
+            display: flex;
+        }
+
+    .carousel-opensoft .elementos-carousel {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+        .carousel-opensoft .elementos-carousel.un-elemento .elemento-carousel {
+            width: 100%;
+        }
+
+        .carousel-opensoft .elementos-carousel.dos-elementos .elemento-carousel {
+            width: 50%;
+        }
+
+        .carousel-opensoft .elementos-carousel.tres-elementos .elemento-carousel {
+            width: 33.3%;
+        }
+
+        .carousel-opensoft .elementos-carousel.cuatro-elementos .elemento-carousel {
+            width: 25%;
+        }
+
+        .carousel-opensoft .elementos-carousel:not(.un-elemento) .elemento-carousel.activo {
+            margin: 0px 2.5px 0px 2.5px;
+        }
+
+        .carousel-opensoft .elementos-carousel .elemento-carousel {
+            display: none;
+            flex-direction: column;
+            padding: 1.5px;
+        } 
+        
+            .carousel-opensoft .elementos-carousel .elemento-carousel.activo {
+                display: flex;
+            }            
+
+            @media only screen and (max-width: 600px) {
+                .carousel-opensoft .elementos-carousel .elemento-carousel .foto-elemento-carousel {
+                    width: 100%;
+                    max-height: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            @media only screen and (min-width: 600px) {
+                .carousel-opensoft .elementos-carousel .elemento-carousel .foto-elemento-carousel {
+                    width: 100%;
+                    max-height: 180px;
+                    height: 180px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            .carousel-opensoft .elementos-carousel .elemento-carousel .texto-elemento-carousel {
+                text-align: center;
+                padding: 10px 10px 10px 10px;
+                background-color: #3D3D3D;
+                color: white;
+                font-weight: bold;
+                font-size: 0.8em;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }

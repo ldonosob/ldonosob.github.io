@@ -1,0 +1,37 @@
+{
+  "name": "SantaRita-App",
+  "short_name": "SantaRita",
+  "description": "SantaRita-App",
+  "start_url": "index.html",
+  "background_color": "black",
+  "icons": [
+    {
+      "src": "App/Content/images/icons/SR_App_icono_144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "App/Content/images/icons/SR_App_icono_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "App/Content/images/icons/SR_App_icono_168.png",
+      "sizes": "168x168",
+      "type": "image/png"
+    },
+    {
+      "src": "App/Content/images/icons/SR_App_icono_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "display": "fullscreen",
+  "related_applications": [
+    {
+      "id": "SantaRita-App",
+      "platform": "webapp",
+      "url": "http://localhost:8080/manifest.json"
+    }
+  ]
+} 

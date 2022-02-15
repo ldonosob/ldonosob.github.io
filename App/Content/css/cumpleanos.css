@@ -1,0 +1,101 @@
+﻿@import '_general.css';
+
+
+body .contenido-cumpleanos {
+    background: linear-gradient(#CEC7B7, #FFFFFF);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+}
+
+body .contenido-cumpleanos .titulo-seccion-cumpleanos {
+    background-color: #04BBA9;
+    color: white;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+}
+
+body .contenido-cumpleanos .titulo-seccion-cumpleanos .texto-titulo-seccion-cumpleanos {
+    width: 100%;
+    padding: 0px 0px 0px 45px;
+    font-style: italic;
+}
+
+body .contenido-cumpleanos .contenedor-cumpleanos {
+
+    background-color: #ededed;
+    margin: 0px 5% 0px 5%;
+    height: 100%;
+}
+
+
+
+body .contenido-cumpleanos .contenedor-cumpleanos .contenedor-datepicker {
+    padding-top:10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+body .contenido-cumpleanos .contenedor-cumpleanos .contenedor-datepicker #divFecha .datepicker.datepicker-inline.active .datepicker-picker {
+    border: solid 1px #04bba9;
+    border-radius: 10px !important;
+}
+
+
+body .contenido-cumpleanos .contenedor-cumpleanos .contenedor-lista-cumpleanos{
+    padding-top:10px;
+}
+
+body .contenido-cumpleanos .contenedor-cumpleanos .contenedor-lista-cumpleanos .no-cumpleanos{
+    text-align: center;
+}
+
+
+body .contenido-cumpleanos .contenedor-cumpleanos .contenedor-lista-cumpleanos .cumpleano{
+    margin-top:10px;
+    background-color: white;
+    border-radius: 5px;
+    border: solid 1px #04BBA9;
+}
+
+body .contenido-cumpleanos .contenedor-cumpleanos .contenedor-lista-cumpleanos .cumpleano .nombre{
+    background-color: #04BBA9;
+    color: white;
+    font-size: 1em;
+    padding: 7px 0px 7px 0px;
+}
+
+body .contenido-cumpleanos .contenedor-cumpleanos .contenedor-lista-cumpleanos .cumpleano .nombre label{
+    width: 100%;
+    padding: 0px 0px 0px 20px;
+}
+
+body .contenido-cumpleanos .contenedor-cumpleanos .contenedor-lista-cumpleanos .cumpleano .cumpleanero{
+   display: flex;
+}
+
+body .contenido-cumpleanos .contenedor-cumpleanos .contenedor-lista-cumpleanos .cumpleano .cumpleanero .div-imagen-cumpleanero{
+    padding: 3px;
+}
+
+body .contenido-cumpleanos .contenedor-cumpleanos .contenedor-lista-cumpleanos .cumpleano .cumpleanero .div-imagen-cumpleanero .imagen-cumpleanero{
+
+    width: 130px;
+    height: 130px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+body .contenido-cumpleanos .contenedor-cumpleanos .contenedor-lista-cumpleanos .cumpleano .cumpleanero .datos-cumpleanero p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }

@@ -1,0 +1,299 @@
+﻿@import '_general.css';
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+    body .contenido-documento {
+        height: 100%;
+        padding: 70px 20px 20px 20px;
+    }
+
+        /* LISTADO DE CARPETAS */
+        body .contenido-documento .lista-carpetas {
+            display: none;
+            margin: 20px 0px 20px 0px;
+        }
+
+            body .contenido-documento .lista-carpetas .titulo-listado {
+                padding: 5px;
+            }
+
+                body .contenido-documento .lista-carpetas .titulo-listado h1 {
+                    font-size: 30px;
+                    letter-spacing: 0.01em;
+                    font-weight: normal;
+                    color: #333;
+                    padding-bottom: 15px;
+                    border-bottom: 4px solid rgba(235, 100, 107,1);
+                    margin: 20px 0px 0px 0px;
+                }
+
+            body .contenido-documento .lista-carpetas .resumen-listado {
+                font-size: .9em;
+            }
+
+            body .contenido-documento .lista-carpetas .imagen-listado {
+                width: 100%;
+                min-height: 200px;
+            }
+
+            body .contenido-documento .lista-carpetas .listado {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+                body .contenido-documento .lista-carpetas .listado .carpeta {
+                    display: flex;
+                    flex-direction: column;
+                    width: calc(50% - 10px);
+                    padding: 5px;
+                    position: relative;
+                    text-decoration: none;
+                }
+
+                    body .contenido-documento .lista-carpetas .listado .carpeta .imagen-carpeta {
+                        width: 100%;
+                        height: 150px;
+                        border-radius: 10px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        background-color: #D3D3D3D3;
+                    }
+
+                    body .contenido-documento .lista-carpetas .listado .carpeta .contenedor-titulo-carpeta {
+                        position: absolute;
+                        bottom: 20px;
+                        left: 15px;
+                        right: 15px;
+                    }
+
+                        body .contenido-documento .lista-carpetas .listado .carpeta .contenedor-titulo-carpeta .titulo-carpeta {
+                            font-size: 20px;
+                            color: #FFFFFF;
+                        }
+
+        /* LISTADO DE DOCUMENTOS */
+        body .contenido-documento .lista-documentos {
+            display: none;
+            margin: 20px 0px 20px 0px;
+        }
+
+            body .contenido-documento .lista-documentos .titulo-listado {
+                padding: 5px;
+            }
+
+                body .contenido-documento .lista-documentos .titulo-listado h1 {
+                    font-size: 30px;
+                    letter-spacing: 0.01em;
+                    font-weight: normal;
+                    color: #333;
+                    padding-bottom: 15px;
+                    border-bottom: 4px solid rgba(235, 100, 107,1);
+                    margin: 20px 0px 0px 0px;
+                }
+
+            body .contenido-documento .lista-documentos .resumen-listado {
+                font-size: .9em;
+            }
+
+            body .contenido-documento .lista-documentos .imagen-listado {
+                width: 100%;
+                min-height: 200px;
+            }
+
+            body .contenido-documento .lista-documentos .listado {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+                body .contenido-documento .lista-documentos .listado .documento {
+                    display: flex;
+                    flex-direction: column;
+                    width: calc(50% - 12px);
+                    margin: 5px;
+                    text-decoration: none;
+                    border: solid 1px #D3D3D3D3;
+                    border-radius: 10px;
+                }
+
+                    body .contenido-documento .lista-documentos .listado .documento .imagen-documento {
+                        width: 100%;
+                        height: 150px;
+                        border-radius: 10px 10px 0px 0px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        background-color: #D3D3D3D3;
+                    }
+
+                    body .contenido-documento .lista-documentos .listado .documento .contenedor-titulo-documento {
+                        border-top: solid 1px #D3D3D3D3;
+                        padding: 10px;
+                    }
+
+                        body .contenido-documento .lista-documentos .listado .documento .contenedor-titulo-documento .titulo-documento {
+                            color: #000000;
+                        }
+
+        /* DETALLE DE DOCUMENTOS */
+        body .contenido-documento .detalle-documento {
+            display: none;
+            margin: 20px 0px 20px 0px;
+        }
+
+            body .contenido-documento .detalle-documento .content-documento {
+                display: none;
+            }
+
+                body .contenido-documento .detalle-documento .content-documento img {
+                    max-width: 100%;
+                    width: 100% !important;
+                }
+
+            body .contenido-documento .detalle-documento .iframe-documento {
+                display: none;
+                width: 100%;
+                height: calc(100vh - 115px);
+                border: none;
+            }
+
+
+        /* PLANTILLA wucDocumentosPlantilla13 */
+        body .contenido-documento .plantilla-video {
+            /*display: ;*/
+            margin: 20px 0px 20px 0px;
+        }
+
+            body .contenido-documento .plantilla-video .video-principal {
+                
+            }
+
+                body .contenido-documento .plantilla-video .video-principal .contenedor-video {
+                    border: 1px solid #eee;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    background-color: #f9f9f9;
+                }
+
+                    body .contenido-documento .plantilla-video .video-principal .contenedor-video h3 {
+                        font-family: 'Roboto Condensed Regular';
+                        color: #000;
+                        font-size: 21px;
+                        letter-spacing: 0.01em;
+                        margin-bottom: 7px;
+                        padding-bottom: 7px;
+                        margin-top: 10px;
+                    }
+
+                    body .contenido-documento .plantilla-video .video-principal .contenedor-video p {
+                        margin: 0 0 10px;
+                    }                    
+
+                body .contenido-documento .plantilla-video .video-principal .contenedor-video .reproductor-galeria-video {
+                    width:100%;
+                }
+
+            body .contenido-documento .plantilla-video .video-miniaturas {
+            }
+
+                body .contenido-documento .plantilla-video .video-miniaturas .bordes {
+                    border: 1px solid #eee;
+                    padding: 15px;
+                    display: inline-block;
+                }
+
+
+                    body .contenido-documento .plantilla-video .video-miniaturas .bordes .div-titulo-video-miniatura .titulo-videos-miniatura  h4 b{
+                        font-weight: 700;
+                    }
+
+                    body .contenido-documento .plantilla-video .video-miniaturas .bordes .caja-video {
+                        width: 100%;
+                        display: inline-block;
+                        margin-bottom: 15px;
+                        padding: 7px;
+                        padding-bottom: 0;
+                        background-color: #f9f9f9;
+                        border: 1px solid #eee;
+                        cursor: pointer;
+                    }
+
+                    body .contenido-documento .plantilla-video .video-miniaturas .bordes .caja-video .imagen-video {
+                        width: 100%;
+                    }
+
+                        body .contenido-documento .plantilla-video .video-miniaturas .bordes .caja-video .div-titulo-video {
+                            color: #741e18;
+                            padding: 7px 0;
+                            font-size: 15px;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: 0.01em
+                        }
+
+                        body .contenido-documento .plantilla-video .video-miniaturas .bordes .caja-video .div-titulo-video .span-titulo-video-galeria {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                        }
+
+
+
+                    
+
+
+
+
+
+
+
+        /* PLANTILLA wucDocumentosPlantilla13 */
+        body .contenido-documento .wucDocumentosPlantilla13 {
+            display: none;
+            margin: 20px 0px 20px 0px;
+        }
+
+            body .contenido-documento .wucDocumentosPlantilla13 .titulo-listado {
+                padding: 5px;
+            }
+
+                body .contenido-documento .wucDocumentosPlantilla13 .titulo-listado h1 {
+                    font-size: 30px;
+                    letter-spacing: 0.01em;
+                    font-weight: normal;
+                    color: #333;
+                    padding-bottom: 15px;
+                    border-bottom: 4px solid rgba(235, 100, 107,1);
+                    margin: 20px 0px 0px 0px;
+                }
+
+            body .contenido-documento .wucDocumentosPlantilla13 .resumen-listado {
+                font-size: .9em;
+            }
+
+            body .contenido-documento .wucDocumentosPlantilla13 .imagen-listado {
+                width: 100%;
+                min-height: 200px;
+            }
+
+            body .contenido-documento .wucDocumentosPlantilla13 .detalle-carousel {
+                display: flex;
+                flex-direction: column;
+                margin: 20px 0px 20px 0px;
+            }
+
+                body .contenido-documento .wucDocumentosPlantilla13 .detalle-carousel .contenedor-imagen-detalle-carousel .imagen-detalle-carousel {
+                    min-height: 200px;
+                    width: 100%;
+                }
+
+                body .contenido-documento .wucDocumentosPlantilla13 .detalle-carousel .contenedor-resumen-detalle-carousel {
+                    margin: 15px 0px 0px 0px;
+                }
